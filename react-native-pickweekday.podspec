@@ -3,8 +3,8 @@ require 'json'
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
 
 Pod::Spec.new do |s|
-  s.name         = package['name']
-  s.version      = package['version']
+  s.name         = "react-native-pickweekday"
+  s.version      = "1.1.2"
   s.summary      = package['description']
   s.license      = package['license']
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage     = package['homepage']
   s.platform     = :ios, "10.0"
 
-  s.source       = { :git => "https://github.com/SalikSayyed/react-native-pickweekday.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/noobd3veloper/react-native-picker-weekday.git", :tag => "v#{s.version}" }
   s.source_files  = "ios/**/*.{h,m,swift}"
 
   s.dependency 'React'
